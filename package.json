@@ -1,0 +1,13 @@
+{
+    "name": "hello-world",
+    "description": "hello world application using Node, Express, Handlebars, and MongoDB.",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "body-parser": "^1.15.2",
+        "express": "^4.14.0",
+        "express-handlebars": "^3.0.0",
+        "handlebars": "^4.0.5",
+        "mongodb": "^2.2.5"
+    }
+}

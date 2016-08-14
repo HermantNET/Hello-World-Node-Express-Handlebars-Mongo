@@ -1,0 +1,40 @@
+<h1>LeGu Of LeGandes</h1>
+
+<div class="container">
+    <label for="search">Search:</label>
+    <input type="text" id="search" name="search" />
+
+    <div id="champions">
+        {{#each champions}}
+        <div data-champion="{{name}}" class="champion">
+            <img src="{{img_path}}" alt="{{name}}">
+            <h3>{{name}}</h3>
+            <h4>{{role}}</h4>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
+
+
+
+<form action="add_champ" method="POST">
+    <div>
+        <label class="block" for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+    </div>
+
+    <div>
+        <label class="block" for="role">Role:</label>
+        <input type="text" id="role" name="role" />
+    </div>
+
+    <div>
+        <label for="img_path">Image:</label>
+        <input type="file" id="img_path" name="img_path" />
+    </div>
+
+    <button type="submit">Post</button>
+</form>
+
+<script src="public/scripts/filter.js"></script>
